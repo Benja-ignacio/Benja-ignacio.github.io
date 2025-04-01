@@ -1,0 +1,13 @@
+.caja {
+  border: 10px solid rgba(93, 183, 222, 1);
+  padding: 15px;
+  margin: 15px;
+  border-radius: 20px;
+  background-color: solid rgba(241, 233, 219, 1);
+  box-shadow: 6px 6px 3px rgba(1, 22, 30, 1);
+}
+
+.bienvenida {
+  text-align: center;
+  list-style-position: inside;
+}
