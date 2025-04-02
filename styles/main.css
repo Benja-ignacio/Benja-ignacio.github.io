@@ -1,13 +1,35 @@
-.caja {
-  border: 10px solid rgba(93, 183, 222, 1);
-  padding: 15px;
-  margin: 15px;
-  border-radius: 20px;
-  background-color: solid rgba(241, 233, 219, 1);
-  box-shadow: 6px 6px 3px rgba(1, 22, 30, 1);
+body {
+  background-color: rgba(174, 117, 159, 1);
 }
 
-.bienvenida {
+.caja,
+.proyectos {
+  border: 10px solid rgba(33, 11, 44, 1);
+  padding: 15px;
+  margin: 0px;
+  border-radius: 20px;
+  background-color: rgba(216, 180, 226, 1);
+  box-shadow: 6px 6px 3px rgba(1, 22, 30, 1);
+  max-width: 800px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+}
+
+.encabezado {
   text-align: center;
-  list-style-position: inside;
+  font-size: 30px;
+}
+
+/* Contenedor flex para alinear las cajas */
+.contenedor-cajas {
+  display: flex;
+  gap: 20px; /* Espacio entre las cajas */
+  justify-content: center; /* Centra las cajas horizontalmente */
+}
+
+.comentarios {
+  margin: 40px 0;
+  padding: 20px;
+  border-top: 1px solid #eee;
 }
