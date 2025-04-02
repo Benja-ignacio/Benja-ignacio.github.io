@@ -33,3 +33,16 @@ body {
   padding: 20px;
   border-top: 1px solid #eee;
 }
+
+.boton-comentarios {
+  display: block; /* Asegura que el botón se comporte como un bloque */
+  margin: 20px 0 0 25px; /* Agrega margen arriba y lo centra */
+  position: relative; /* Permite ajustarlo sin afectar otros elementos */
+  bottom: -30px; /* Baja el botón */
+  color: black;
+  font-size: 15px;
+  background-color: rgba(216, 180, 226, 1);
+  border: 3px solid black;
+  border-radius: 10px;
+  font-weight: bold;
+}
