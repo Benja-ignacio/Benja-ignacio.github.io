@@ -1,48 +1,143 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: rgba(174, 117, 159, 1);
 }
 
-.caja,
-.proyectos {
-  border: 5px solid rgba(33, 11, 44, 1);
-  padding: 15px;
-  margin: 0px;
-  border-radius: 20px;
-  background-color: rgba(216, 180, 226, 1);
-  box-shadow: 3px 3px 3px rgba(1, 22, 30, 1);
-  max-width: 800px;
-  font-size: 18px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: black;
-}
-
-.encabezado {
-  text-align: center;
-  font-size: 30px;
-}
-
-/* Contenedor flex para alinear las cajas */
-.contenedor-cajas {
+.contenedor-horizontal {
   display: flex;
-  gap: 20px; /* Espacio entre las cajas */
-  justify-content: center; /* Centra las cajas horizontalmente */
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 50px;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
-.comentarios {
-  margin: 40px 0;
+.bienvenida {
+  text-align: center;
+  font-size: 20px;
+  margin-top: -40 px;
+}
+
+.contenedor-principal {
+  border: 5px solid black;
+  margin: 0px;
+  padding: 30px;
+  background-color: rgba(216, 180, 226, 1);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(1, 22, 30, 1);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor-principal h3 {
+  margin: 5px;
+  text-align: left;
+  margin-left: 30px;
+  max-width: 100%;
+  font-size: 26px;
+}
+
+.contenedor-principal p {
+  text-align: left;
+  margin: 10px;
+  margin-left: 30px;
+  max-width: 100%;
+  font-size: 20px;
+}
+
+.contenedor-principal h4 {
+  text-align: left;
+  margin: 5px;
+  max-width: 100%;
+  font-size: 18px;
+}
+
+.contenedor {
+  border: 5px solid black;
+  margin: 15px;
+  background-color: rgba(216, 180, 226, 1);
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-shadow: 3px 3px 3px rgba(1, 22, 30, 1);
+  width: 250px; /* Añade un ancho específico más pequeño */
+  flex-shrink: 0; /* Evita que se expanda */
+}
+
+.contenedor p {
+  font-size: 20px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.lista li {
+  text-align: left;
+  padding: 0;
+  list-style-position: outside;
+  max-width: 100%;
+  width: auto;
+  font-size: 18px;
+  word-wrap: break-word; /* Permite que las palabras se corten */
+  white-space: normal; /* Permite saltos de línea automáticos */
+  overflow-wrap: break-word; /* Ayuda a manejar palabras largas */
+  margin-bottom: 5px;
+  max-width: 100%;
+}
+
+.lista {
+  margin: 0 auto;
+  display: block;
+  text-align: left;
   padding: 20px;
-  border-top: 1px solid #eee;
+  padding-left: 40px;
+}
+
+.header2 {
+  text-align: center;
+  margin: 15px;
+}
+
+.header p {
+  border: 5px solid black;
+  margin: 5px;
+  text-align: center;
+}
+
+.comentarios-caja {
+  margin: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start; /* izquierda */
+  align-items: flex-end; /* abajo */
+  height: 100%; /* para ocupar todo el alto disponible */
+  max-width: 100%;
+  margin-left: 90px;
+  margin-bottom: -10px;
 }
 
 .boton-comentarios {
-  display: block; /* Asegura que el botón se comporte como un bloque */
-  margin: 20px 0 0 25px; /* Agrega margen arriba y lo centra */
-  position: relative; /* Permite ajustarlo sin afectar otros elementos */
-  bottom: -30px; /* Baja el botón */
-  color: black;
-  font-size: 15px;
-  background-color: rgba(216, 180, 226, 1);
   border: 3px solid black;
-  border-radius: 10px;
+  margin: 5px;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
   font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgba(216, 180, 226, 1);
+  border-radius: 10px;
+}
+
+.comentarios {
+  margin: 0 auto;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+#about-me {
+  margin: 5px;
+  margin-top: 40px;
+  margin-left: 30px;
 }

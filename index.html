@@ -4,46 +4,80 @@
     <link rel="icon" href="assets/cat.png" type="image/png" />
     <title>Blog-Benjamin</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <div class="contenedor-cajas"> 
-    <div class="caja">
-    <h1 class="encabezado"><strong>¡Bienvenido a mi blog!</strong></h1>
-    <h3>Sobre mí</h3>
-    <p>
-      ¡Hola! Me llamo Benjamín y tengo 19 años. Actualmente, estoy en mi primer año de Ingeniería Informática. 
-      <p>Cosas sobre mí</p>
-      <ul>
-        <li>Me gusta jugar videojuegos</li>
-        <li>¡Mi anime favorito es BLEACH!</li>
-        <li>Mi videojuego favorito es Counter-Strike</li>
-        <li>Disfruto de conversar con personas</li>
-        <li>Me gustan varios géneros de música, pero mis preferidos son subgéneros de la Electrónica y Pop; como Drum and Bass, Hyperpop, Ambient, etc.</li>
-        <li>Me gustan los Gatitos</li>
-        <li>Amo el invierno</li>
-        <li>Mi cumpleaños es el 15 de junio</li>
-        <li>Canción favorita Dj poolboi - <a href="https://www.youtube.com/watch?v=_6_Sp-YFyn0" target="_blank" class="cancionfavorita"><em>Like We Were The Last Two People On Earth</em></a> ♡</li>
-      </ul>
-    </p>
-  </div>
-  <div class="proyectos">
-    <h1 class="encabezado">Proyectos</h1>
-    <p>Actualmente no cuento con ningun proyecto.</p>
-  </div>
-</div>
+    <!-- CONTENEDOR DE LAS CAJAS  --> 
+    <div class="contenedor-horizontal">
+      <!-- CONTEDOR DE BIENVENIDA-->
+      <div class="contenedor-principal">
+        <header class="bienvenida">
+          <h1><strong><br>¡Bienvenido a mi blog!</strong></h1>
+        </header>
 
-<button Onclick="ShowOrHide()" id="toggleButton" class="boton-comentarios">Ocultar Comentarios</button>
-<div class="comentarios" id="ShowOrHide">
-  <script src="https://utteranc.es/client.js"
+        <h3>Sobre mí</h3>
+        <p>
+          ¡Hola! Me llamo Benjamín y tengo 19 años. Actualmente, estoy en mi
+          primer año de Ingeniería Informática.
+        </p>
+
+        <div class="contenedor-lista">
+          <p id="about-me"><i><b>Cosas sobre mí</b></i></p>
+         <ul class="lista">
+           <li>Me gusta jugar videojuegos</li>
+           <li>¡Mi anime favorito es BLEACH!</li>
+           <li>Mi videojuego favorito es Counter-Strike</li>
+           <li>Disfruto de conversar con personas</li>
+           <li>
+             Me gustan varios géneros de música, pero mis preferidos son
+             subgéneros de la Electrónica y Pop; como Drum and Bass, Hyperpop,
+             Ambient, etc.
+           </li>
+           <li>Me gustan los Gatitos</li>
+           <li>Amo el invierno</li>
+           <li>Mi cumpleaños es el 15 de junio</li>
+           <li>
+             Canción favorita Dj poolboi - <a
+              href="https://www.youtube.com/watch?v=_6_Sp-YFyn0"
+              target="_blank">
+              <em>Like We Were The Last Two People On Earth</em>
+            </a>
+            ♡
+           </li>
+          </ul>
+        </div>
+      </div>
+      <!-- CONTENEDOR DE PROYECTOS-->
+      <div class="contenedor">
+        <header class="header2">
+          <h1>Proyectos</h1>
+          <p>Actualmente no cuento con ningún proyecto.</p>
+        </header>
+      </div>
+    </div>
+    
+    <!-- CONTENEDOR DE OCULTAR COMENTARIOS -->
+    <div class="comentarios-caja">
+        <button
+          Onclick="ShowOrHide()"
+          id="toggleButton"
+          class="boton-comentarios"
+        >
+          Ocultar Comentarios
+        </button>
+    </div>
+
+    <div class="comentarios" id="ShowOrHide">
+      <script
+        src="https://utteranc.es/client.js"
         repo="Benja-ignacio/Benja-ignacio.github.io"
         issue-term="title"
         theme="github-dark-orange"
         crossorigin="anonymous"
-        async>
-</script>
-</div>
-<script src="scripts/ShowOrHide.js"></script>
+        async
+      ></script>
+    </div>
+    <script src="scripts/ShowOrHide.js"></script>
   </body>
-</html>
+</html
