@@ -1,64 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <link rel="icon" href="assets/cat.png" type="image/png" />
-    <title>Blog-Benjamin</title>
+    <title>Benja-blog</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/main.css" />
+    <!-- LINKS -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="images/pikachu.png" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- CONTENEDOR DE LAS CAJAS  --> 
-    <div class="contenedor-horizontal">
-      <!-- CONTEDOR DE BIENVENIDA-->
-      <div class="contenedor-principal">
-        <header class="bienvenida">
-          <h1><strong><br>¡Bienvenido a mi blog!</strong></h1>
-        </header>
-
+    <div class="contenedor">
+      <!-- CONTENEDOR DE BIENVENIDA -->
+      <div class="contenedor-main" id="main">
+        <h1>¡Bienvenido a mi blog!</h1>
         <h3>Sobre mí</h3>
         <p>
           ¡Hola! Me llamo Benjamín y tengo 19 años. Actualmente, estoy en mi
           primer año de Ingeniería Informática.
         </p>
 
-        <div class="contenedor-lista">
-          <p id="about-me"><i><b>Cosas sobre mí</b></i></p>
-         <ul class="lista">
-           <li>Me gusta jugar videojuegos</li>
-           <li>¡Mi anime favorito es BLEACH!</li>
-           <li>Mi videojuego favorito es Counter-Strike</li>
-           <li>Disfruto de conversar con personas</li>
-           <li>
-             Me gustan varios géneros de música, pero mis preferidos son
-             subgéneros de la Electrónica y Pop; como Drum and Bass, Hyperpop,
-             Ambient, etc.
-           </li>
-           <li>Me gustan los Gatitos</li>
-           <li>Amo el invierno</li>
-           <li>Mi cumpleaños es el 15 de junio</li>
-           <li>
-             Canción favorita Dj poolboi - <a
+        <h4><strong>Cosas sobre mí</strong></h4>
+        <ul>
+          <li>Me gusta jugar videojuegos</li>
+          <li>¡Mi anime favorito es BLEACH!</li>
+          <li>Mi videojuego favorito es Counter-Strike</li>
+          <li>Disfruto de conversar con personas</li>
+          <li>
+            Me gustan varios géneros de música, pero mis preferidos son
+            subgéneros de la Electrónica y Pop; como Drum and Bass, Hyperpop,
+            Ambient, etc.
+          </li>
+          <li>Me gustan los Gatitos</li>
+          <li>Amo el invierno</li>
+          <li>Mi cumpleaños es el 15 de junio</li>
+          <li>
+            Canción favorita Dj poolboi -
+            <a
               href="https://www.youtube.com/watch?v=_6_Sp-YFyn0"
-              target="_blank">
+              target="_blank"
+            >
               <em>Like We Were The Last Two People On Earth</em>
             </a>
             ♡
-           </li>
-          </ul>
-        </div>
+          </li>
+        </ul>
       </div>
-      <!-- CONTENEDOR DE PROYECTOS-->
-      <div class="contenedor">
-        <header class="header2">
-          <h1>Proyectos</h1>
-          <p>Actualmente no cuento con ningún proyecto.</p>
-        </header>
+      <!-- FIN CONTENEDOR DE BIENVENIDA -->
+
+      <!-- CONTENEDOR PROYECTOS-->
+      <div class="contenedor-proyectos" id="proyectos">
+        <h1>Proyectos</h1>
+        <p>Actualmente no cuento con ningún proyecto.</p>
       </div>
-    </div>
-    
-    <!-- CONTENEDOR DE OCULTAR COMENTARIOS -->
-    <div class="comentarios-caja">
+      <!-- FIN CONTENEDOR PROYECTOS-->
+
+      <!-- CONTENEDOR COMENTARIOS-->
+      <div class="contenedor-comentarios">
         <button
           Onclick="ShowOrHide()"
           id="toggleButton"
@@ -66,8 +72,11 @@
         >
           Ocultar Comentarios
         </button>
+      </div>
+      <!-- FIN CONTENEDOR COMENTARIOS-->
     </div>
 
+    <!-- COMENTARIOS-->
     <div class="comentarios" id="ShowOrHide">
       <script
         src="https://utteranc.es/client.js"
@@ -77,7 +86,9 @@
         crossorigin="anonymous"
         async
       ></script>
+      <!-- FIN COMENTARIOS-->
     </div>
+
     <script src="scripts/ShowOrHide.js"></script>
   </body>
-</html
+</html>

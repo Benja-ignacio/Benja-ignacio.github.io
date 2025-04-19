@@ -1,0 +1,97 @@
+body {
+  background-image: url("../images/pikachu.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Josefin Sans", sans-serif;
+}
+.contenedor-main {
+  width: 50%;
+  height: 600px;
+  padding: 20px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  background-color: rgba(22, 14, 22, 0.5);
+  color: white;
+}
+
+.contenedor-main h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+.contenedor-main h3 {
+  font-size: 2em;
+  padding-left: 20px;
+}
+
+.contenedor-main p {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.contenedor-main h4 {
+  font-size: 1.5em;
+}
+
+.contenedor-main ul {
+  font-size: 1.2em;
+}
+
+.contenedor-proyectos {
+  width: 50%;
+  padding: 20px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  background-color: rgba(22, 14, 22, 0.5);
+  color: white;
+  height: 600px;
+  width: fit-content;
+}
+
+.contenedor-proyectos h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+.contenedor-proyectos p {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.contenedor-comentarios {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.boton-comentarios {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgba(22, 14, 22, 0.5);
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 15%;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 15px auto;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.comentarios {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
