@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-image: url("../images/pikachu.png");
   background-repeat: no-repeat;
@@ -6,14 +10,17 @@ body {
   background-size: cover;
   font-family: "Josefin Sans", sans-serif;
 }
+
 .contenedor-main {
   width: 50%;
-  height: 600px;
+  min-height: 600px;
   padding: 20px;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 5px;
   background-color: rgba(22, 14, 22, 0.5);
   color: white;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .contenedor-main h1 {
@@ -46,7 +53,7 @@ body {
   border-radius: 5px;
   background-color: rgba(22, 14, 22, 0.5);
   color: white;
-  height: 600px;
+  min-height: 600px;
   width: fit-content;
 }
 
