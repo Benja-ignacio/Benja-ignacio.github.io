@@ -102,3 +102,45 @@ body {
   padding: 10px;
   border-top: 1px solid #eee;
 }
+
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .contenedor-main,
+  .contenedor-proyectos {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .contenedor-main h1,
+  .contenedor-proyectos h1 {
+    font-size: 2em;
+  }
+
+  .contenedor-main h3 {
+    font-size: 1.5em;
+    padding-left: 10px;
+  }
+
+  .contenedor-main p,
+  .contenedor-proyectos p,
+  .contenedor-main ul {
+    font-size: 1em;
+  }
+
+  .boton-comentarios {
+    margin-left: 1.3em;
+    width: fit-content;
+    font-size: 0.9em;
+    padding: 6px;
+  }
+
+  body {
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
