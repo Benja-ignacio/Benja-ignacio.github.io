@@ -1,146 +1,58 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
-  background-image: url("../images/pikachu.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: url("https://tophatcats.neocities.org/backgrounds/bg-purple-stars.gif")
+    repeat;
+  background-color: black;
+  color: #ffffff;
+  font-family: "Courier New", monospace;
 }
-
-.contenedor-main {
-  width: 50%;
-  min-height: 600px;
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: rgba(0, 0, 0, 0.95);
+  border: 3px dashed #ff00ff;
   padding: 20px;
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 5px;
-  background-color: rgba(22, 14, 22, 0.5);
-  color: white;
-  overflow-wrap: break-word;
-  word-break: break-word;
+  box-shadow: 0 0 15px #ff00ff;
 }
-
-.contenedor-main h1 {
-  text-align: center;
-  font-size: 3em;
+h1,
+h2 {
+  color: #00ffff;
+  text-shadow: none;
 }
-
-.contenedor-main h3 {
-  font-size: 2em;
-  padding-left: 20px;
-}
-
-.contenedor-main p {
-  font-size: 20px;
+p,
+li {
   line-height: 1.5em;
 }
-
-.contenedor-main h4 {
-  font-size: 1.5em;
+a {
+  color: #ffcc00;
+  text-decoration: none;
 }
-
-.contenedor-main ul {
-  font-size: 1.2em;
+a:hover {
+  text-decoration: underline;
+  color: #ffffff;
 }
-
-.contenedor-proyectos {
-  width: 50%;
-  padding: 20px;
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 5px;
-  background-color: rgba(22, 14, 22, 0.5);
-  color: white;
-  min-height: 600px;
-  width: fit-content;
-}
-
-.contenedor-proyectos h1 {
-  font-size: 3em;
-  text-align: center;
-}
-
-.contenedor-proyectos p {
-  font-size: 20px;
-  line-height: 1.5em;
-}
-
-.contenedor-comentarios {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 20px;
-}
-
-.boton-comentarios {
-  border: 2px solid rgb(0, 0, 0);
-  background-color: rgba(22, 14, 22, 0.5);
-  color: white;
-  text-align: center;
-  border-radius: 5px;
-  padding: 5px;
-  margin-left: 15%;
-}
-
-.contenedor {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 30px;
-  margin: 15px auto;
-  width: 100%;
-  flex-wrap: wrap;
-}
-
-.comentarios {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
+nav {
+  margin: 20px 0;
   padding: 10px;
-  border-top: 1px solid #eee;
+  background-color: #222;
+  border: 2px solid #00ffff;
 }
-
-@media (max-width: 768px) {
-  .contenedor {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .contenedor-main,
-  .contenedor-proyectos {
-    width: 90%;
-    padding: 15px;
-  }
-
-  .contenedor-main h1,
-  .contenedor-proyectos h1 {
-    font-size: 2em;
-  }
-
-  .contenedor-main h3 {
-    font-size: 1.5em;
-    padding-left: 10px;
-  }
-
-  .contenedor-main p,
-  .contenedor-proyectos p,
-  .contenedor-main ul {
-    font-size: 1em;
-  }
-
-  .boton-comentarios {
-    margin-left: 1.3em;
-    width: fit-content;
-    font-size: 0.9em;
-    padding: 6px;
-  }
-
-  body {
-    background-size: cover;
-    background-attachment: scroll;
-  }
+nav a {
+  margin-right: 15px;
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 2px dotted #ff00ff;
+  font-size: 0.9em;
+}
+.ascii-art {
+  font-family: monospace;
+  white-space: pre;
+  color: #00ff00;
+  margin-bottom: 20px;
 }

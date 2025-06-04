@@ -1,94 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Benja-blog</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- LINKS -->
-    <link rel="stylesheet" href="styles/normalize.css" />
+    <title>benja-ignacio</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="images/pikachu.png" />
-
-    <!-- FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <div class="contenedor">
-      <!-- CONTENEDOR DE BIENVENIDA -->
-      <div class="contenedor-main" id="main">
-        <h1>¡Bienvenido a mi blog!</h1>
-        <h3>Sobre mí</h3>
-        <p>
-          ¡Hola! Me llamo Benjamín y tengo 19 años. Actualmente, estoy en mi
-          primer año de Ingeniería Informática.
-        </p>
+    <div class="container">
+      <header>
+        <div class="ascii-art">[=^.^=] Welcome!</div>
+        <h1>Benjamin's homepage</h1>
+        <p>my little place on the web!</p>
+      </header>
 
-        <h4><strong>Cosas sobre mí</strong></h4>
+      <nav>
+        <a href="./misc/about.html">about</a>
+        <a href="./misc/links.html">links</a>
+        <a href="./misc/contact.html">contact</a>
+      </nav>
+
+      <section id="about">
+        <h2>about me</h2>
+        <p>
+          Hi! My name is Benjamin I'm 19 years old. Currently I'm in my first
+          year of Computer Science
+        </p>
         <ul>
-          <li>Me gusta jugar videojuegos</li>
-          <li>¡Mi anime favorito es BLEACH!</li>
-          <li>Mi videojuego favorito es Counter-Strike</li>
-          <li>Disfruto de conversar con personas</li>
+          <br />
+          <li>I Love Bleach</li>
           <li>
-            Me gustan varios géneros de música, pero mis preferidos son
-            subgéneros de la Electrónica y Pop; como Drum and Bass, Hyperpop,
-            Ambient, etc.
+            I mostly play Deadlock, Counter-Strike(cs2, source) and League
           </li>
-          <li>Me gustan los Gatitos</li>
-          <li>Amo el invierno</li>
-          <li>Mi cumpleaños es el 15 de junio</li>
+          <li>I prefer Winter over Summer</li>
+          <li>My Birthday is on June 25th</li>
+          <li>I like cats</li>
           <li>
-            Canción favorita Dj poolboi -
-            <a
-              href="https://www.youtube.com/watch?v=_6_Sp-YFyn0"
-              target="_blank"
-            >
-              <em>Like We Were The Last Two People On Earth</em>
+            My favorite song is
+            <a href="https://www.youtube.com/watch?v=wBEkz9QKjLc"
+              >like we were the last two people on earth
             </a>
-            ♡
           </li>
         </ul>
-      </div>
-      <!-- FIN CONTENEDOR DE BIENVENIDA -->
+      </section>
 
-      <!-- CONTENEDOR PROYECTOS-->
-      <div class="contenedor-proyectos" id="proyectos">
-        <h1>Proyectos</h1>
-        <p>Actualmente no cuento con ningún proyecto.</p>
-      </div>
-      <!-- FIN CONTENEDOR PROYECTOS-->
+      <section id="links">
+        <h2>cool links</h2>
+        <ul>
+          <li>
+            <a href="https://github.com/Benja-ignacio" target="_blank"
+              >My GitHub</a
+            >
+          </li>
+          <!-- Add more links here -->
+        </ul>
+      </section>
 
-      <!-- CONTENEDOR COMENTARIOS-->
-      <div class="contenedor-comentarios">
-        <button
-          Onclick="ShowOrHide()"
-          id="toggleButton"
-          class="boton-comentarios"
-        >
-          Ocultar Comentarios
-        </button>
-      </div>
-      <!-- FIN CONTENEDOR COMENTARIOS-->
+      <section id="contact">
+        <h2>contact</h2>
+        <p>
+          Email:
+          <a href="mailto:Benja.ignacio.0515@gmail.com"
+            >Benja.ignacio.0515@gmail.com</a
+          >
+        </p>
+      </section>
+
+      <footer>
+        <p>© 2025 benja-ignacio — thanks for visiting!</p>
+      </footer>
     </div>
-
-    <!-- COMENTARIOS-->
-    <div class="comentarios" id="comentarios-section">
-      <script
-        src="https://utteranc.es/client.js"
-        repo="Benja-ignacio/Benja-ignacio.github.io"
-        issue-term="title"
-        theme="github-dark-orange"
-        crossorigin="anonymous"
-        async
-      ></script>
-    </div>
-    <!-- FIN COMENTARIOS-->
-
-    <script src="scripts/ShowOrHide.js"></script>
   </body>
 </html>
