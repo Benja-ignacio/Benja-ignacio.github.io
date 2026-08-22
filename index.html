@@ -8,16 +8,16 @@
   </head>
   <body>
     <header>
-      <nav class="bg-fondo w-full z-20 top-0 start-0 border-b border-default">
-        <div
-          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-        >
-          <a href="#" class="flex items-center space-x-3">
-            <span
-              class="self-center text-xl text-heading font-semibold whitespace-nowrap"
-              >Benjamin Perez</span
-            >
-          </a>
+      <nav
+        class="bg-fondo w-full z-20 top-0 start-0 border-b border-default relative"
+      >
+        <div class="max-w-screen-xl flex flex-wrap items-center mx-auto p-4">
+          <img
+            src="assets/images/name.png"
+            alt="Logo nombre"
+            class="absolute left-15 top-[25%] w-80 h-auto"
+          />
+          <!-- boton para pantallas pequeñas -->
           <button
             data-collapse-toggle="navbar-default"
             type="button"
@@ -44,46 +44,46 @@
             </svg>
           </button>
           <div
-            class="hidden w-full md:block md:w-auto rounded-2xl"
+            class="hidden w-full md:block md:flex-1 rounded-2xl"
             id="navbar-default"
           >
             <ul
-              class="font-medium flex flex-col mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary"
+              class="font-medium text-white [text-shadow:1px_1px_0px_black] flex flex-col mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:justify-center md:bg-neutral-primary"
             >
               <li>
                 <a
                   href="#"
-                  class="bg-rosa block rounded md:text-fg-brand"
+                  class="block rounded md:text-fg-brand"
                   aria-current="page"
                   >Home</a
                 >
               </li>
               <li>
                 <a
+                  href="pages/about.html"
+                  class="block text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:dark:hover:bg-transparent"
+                  >Acerca de mi
+                </a>
+              </li>
+              <li>
+                <a
                   href="#"
-                  class="bg-rosa block text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:dark:hover:bg-transparent"
-                  >About</a
+                  class="block text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:dark:hover:bg-transparent"
+                  >Proyectos</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="bg-rosa block text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:dark:hover:bg-transparent"
-                  >Services</a
+                  class="block text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:dark:hover:bg-transparent"
+                  >Blog</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="bg-rosa block text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:dark:hover:bg-transparent"
-                  >Pricing</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="bg-rosa block text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:dark:hover:bg-transparent"
-                  >Contact</a
+                  class="block text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:dark:hover:bg-transparent"
+                  >Contacto</a
                 >
               </li>
             </ul>
@@ -91,60 +91,88 @@
         </div>
       </nav>
     </header>
+    <div class="relative w-full bg-fondo2">
+      <section id="cv" class="text-center pt-4">
+        <h1 class="text-4xl font-bold">Curriculum vitae</h1>
+        <h3><em>Benjamin Ignacio Perez Sarmiento</em></h3>
+        <p>benja.ignacio.0515@gmail.com +56 912345678</p>
+      </section>
+      <img
+        src="assets/images/peeking_from_right_anime.png"
+        alt=""
+        class="absolute top-10 right-0 w-180 h-auto pointer-events-none"
+      />
+      <div id="sections" class="max-w-4xl mx-auto grid grid-cols-2 gap-4 p-8">
+        <section
+          id="educacion"
+          class="h-64 border rounded-sm p-4 overflow-y-auto space-y-6"
+        >
+          <h3 class="text-center font-bold italic text-lg">Educacion</h3>
+          <div class="item-educacion">
+            <p>En proceso - Ingenieria en informatica</p>
+            <p>Duoc uc, Santiago, Sede San joaquin</p>
+          </div>
+        </section>
 
-    <section id="cv">
-      <h1>Curriculum vitae</h1>
-      <h3><em>Benjamin Ignacio Perez Sarmiento</em></h3>
-      <p>benja.ignacio.0515@gmail.com +56 912345678</p>
-    </section>
+        <section
+          id="experiencia"
+          class="h-64 border rounded-sm p-4 overflow-y-auto space-y-6"
+        >
+          <h3 class="text-center font-bold italic text-lg">Experiencia</h3>
+          <div class="item-experiencia">
+            <p><strong>Globalclean</strong> — Diciembre 2025 - Abril 2026</p>
+            <p>
+              Realización de labores de limpieza y mantenimiento de espacios,
+              procurando mantener ambientes limpios, ordenados y en buenas
+              condiciones.
+            </p>
+          </div>
+          <div class="item-experiencia">
+            <p><strong>KFC</strong> — Abril 2026 - Actualidad</p>
+            <p>
+              Atención y servicio a clientes, preparación de productos,
+              mantenimiento del orden y limpieza del área de trabajo y apoyo en
+              las distintas funciones del restaurante.
+            </p>
+          </div>
+        </section>
 
-    <section id="educacion">
-      <h3>Educacion</h3>
-      <div class="item-educacion">
-        <p><strong>En proceso - </strong> Ingenieria en informatica</p>
-        <p>Duoc uc, Santiago, Sede San joaquin</p>
+        <section
+          id="tecnologias"
+          class="h-64 border rounded-sm overflow-y-auto p-4 space-y-6"
+        >
+          <h3 class="text-center font-bold italic text-lg">Tecnologias</h3>
+          <div class="item-tecnologias">
+            <ul class="skills-list">
+              <li>Git - Github</li>
+              <li>Python - Intermedio</li>
+              <li>Springboot</li>
+              <li>Docker</li>
+              <li>Java</li>
+              <li>Linux</li>
+            </ul>
+          </div>
+        </section>
+
+        <section
+          id="idiomas"
+          class="h-64 border rounded-sm overflow-y-auto space-y-6 p-4"
+        >
+          <h3 class="text-center font-bold italic text-lg">Idiomas</h3>
+          <div class="item-idiomas">
+            <p>Ingles B1</p>
+          </div>
+        </section>
       </div>
-    </section>
-
-    <section id="experiencia">
-      <h3>Experiencia</h3>
-      <div class="item-experiencia"></div>
-    </section>
-
-    <section id="tecnologias">
-      <h3>Tecnologias</h3>
-      <div class="item-tecnologias">
-        <ul class="skills-list">
-          <li>Git - Github</li>
-          <li>Python - Intermedio</li>
-          <li>Springboot</li>
-          <li>Docker</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="idiomas">
-      <h3>Idiomas</h3>
-      <div class="item-idiomas">
-        <p>Ingles B1</p>
-      </div>
-    </section>
-
-    <footer>
-      <nav>
-        <a href="/pages/about.html">Acerca</a>
-        <a href="/pages/about.html">Contacto</a>
-      </nav>
-    </footer>
-
-    <div>
-      <p>© 2026 Benjamín. Todos los derechos reservados.</p>
     </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+    <div id="footer" class="bg-fondo">
+      <footer>
+        <nav>
+          <a href="/pages/about.html">Acerca</a>
+          <a href="/pages/about.html">Contacto</a>
+          <p>© 2026 Benjamín. Todos los derechos reservados.</p>
+        </nav>
+      </footer>
+    </div>
   </body>
 </html>

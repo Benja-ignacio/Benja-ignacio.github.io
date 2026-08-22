@@ -5,5 +5,8 @@
   },
   "allowScripts": {
     "@parcel/watcher@2.5.1": true
+  },
+  "devDependencies": {
+    "@designbycode/tailwindcss-text-shadow": "^2.2.1"
   }
 }
