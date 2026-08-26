@@ -1,8 +1,27 @@
 @import "tailwindcss";
 
 @theme {
+  --color-soft-pink: #ffcce6;
+  --color-hot-pink: #ff3399;
   --color-bgr: #eeaeca;
   --color-fondo: #ffe0e0;
   --color-rosa: #ffc0d0;
   --color-bwhite: #ffffff;
+
+  --shadow-nav:
+    0 0 0 3px var(--color-hot-pink), 0 4px 8px rgba(0, 0, 0, 0.25),
+    inset 0 3px 6px rgba(255, 255, 255, 0.9),
+    inset 0 -3px 6px rgba(0, 0, 0, 0.25), inset 0 0 8px rgba(255, 255, 255, 0.6);
+
+  --background-image-pink: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.7) 0%,
+    var(--color-soft-pink) 30%,
+    var(--color-soft-pink) 70%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+
+  --text-shadow-pink:
+    1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    2px 2px 0 var(--color-hot-pink);
 }
