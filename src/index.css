@@ -42,14 +42,15 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-purplebg: #a9a2f6;
+    --color-soft-purple: #aea9ea;
     --color-soft-pink: #ffcce6;
     --color-hot-pink: #ff3399;
-    --color-bgr: #eeaeca;
-    --background-image-pink: linear-gradient(
+    --background-image-purple: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0.7) 0%,
-    var(--color-soft-pink) 30%,
-    var(--color-soft-pink) 70%,
+    var(--color-soft-purple) 30%,
+    var(--color-soft-purple) 70%,
     rgba(0, 0, 0, 0.1) 100%
   );
   }
@@ -360,11 +361,11 @@
   .border-white {
     border-color: var(--color-white);
   }
-  .bg-bgr {
-    background-color: var(--color-bgr);
+  .bg-purplebg {
+    background-color: var(--color-purplebg);
   }
-  .bg-pink {
-    background-image: var(--background-image-pink);
+  .bg-purple {
+    background-image: var(--background-image-purple);
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -407,8 +408,8 @@
   .italic {
     font-style: italic;
   }
-  .shadow-nav {
-    --tw-shadow: 0 0 0 3px var(--tw-shadow-color, var(--color-hot-pink)), 0 4px 8px var(--tw-shadow-color, rgba(0, 0, 0, 0.25)), inset 0 3px 6px var(--tw-shadow-color, rgba(255, 255, 255, 0.9)), inset 0 -3px 6px var(--tw-shadow-color, rgba(0, 0, 0, 0.25)), inset 0 0 8px var(--tw-shadow-color, rgba(255, 255, 255, 0.6));
+  .shadow-nav-purple {
+    --tw-shadow: 0 0 0 3px var(--tw-shadow-color, var(--color-soft-purple)), 0 4px 8px var(--tw-shadow-color, rgba(0, 0, 0, 0.25)), inset 0 3px 6px var(--tw-shadow-color, rgba(255, 255, 255, 0.9)), inset 0 -3px 6px var(--tw-shadow-color, rgba(0, 0, 0, 0.25)), inset 0 0 8px var(--tw-shadow-color, rgba(255, 255, 255, 0.6));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .\[-webkit-text-stroke\:2px_black\] {
@@ -420,8 +421,8 @@
   .\[text-shadow\:3px_3px_0px_\#ff00ff\] {
     text-shadow: 3px 3px 0px #ff00ff;
   }
-  .text-shadow-pink {
-    text-shadow: 1px 1px 0 var(--tw-text-shadow-color, #fff), -1px -1px 0 var(--tw-text-shadow-color, #fff), 1px -1px 0 var(--tw-text-shadow-color, #fff), -1px 1px 0 var(--tw-text-shadow-color, #fff), 2px 2px 0 var(--tw-text-shadow-color, var(--color-hot-pink));
+  .text-shadow-purple {
+    text-shadow: 1px 1px 0 var(--tw-text-shadow-color, #fff), -1px -1px 0 var(--tw-text-shadow-color, #fff), 1px -1px 0 var(--tw-text-shadow-color, #fff), -1px 1px 0 var(--tw-text-shadow-color, #fff), 2px 2px 0 var(--tw-text-shadow-color, var(--color-soft-purple));
   }
   .focus\:ring-2:focus {
     --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
