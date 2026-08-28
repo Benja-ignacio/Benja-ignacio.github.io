@@ -8,6 +8,15 @@
     <link rel="icon" type="image/png" href="assets/images/rin.jpg" />
   </head>
   <body class="relative w-full min-h-screen flex flex-col">
+    <video
+      autoplay
+      muted
+      playsinline
+      class="hidden fixed inset-0 w-screen h-screen object-cover z-[9999] pointer-events-auto"
+      id="foxy"
+    >
+      <source src="assets/videos/foxy.mp4" type="video/mp4" />
+    </video>
     <!-- NAV -->
     <header>
       <nav
@@ -228,5 +237,6 @@
     <!-- SCRIPTS -->
     <script src="assets/js/pageStyleMenu.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="assets/js/foxy.js"></script>
   </body>
 </html>
