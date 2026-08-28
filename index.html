@@ -8,9 +8,10 @@
     <link rel="icon" type="image/png" href="assets/images/rin.jpg" />
   </head>
   <body class="relative w-full min-h-screen flex flex-col">
+    <!-- NAV -->
     <header>
       <nav
-        class="bg-purplebg w-full z-20 top-0 start-0 border-b border-default relative"
+        class="bg-bg w-full z-20 top-0 start-0 border-b border-default relative"
       >
         <div class="max-w-screen-xl flex flex-wrap items-center mx-auto p-4">
           <img
@@ -90,26 +91,60 @@
             </ul>
           </div>
 
-          <!-- Style -->
-          <button class="ml-auto shrink-0 text-shadow-purple">Style</button>
+          <!-- Colors Style -->
+          <div class="relative inline-block">
+            <button
+              onclick="toggleMenu()"
+              class="ml-auto shrink-0 text-shadow-purple"
+            >
+              Style
+            </button>
+            <div
+              id="menu"
+              class="hidden absolute rounded p-2 shadow-nav-purple border border-gray-300 shadow-lg min-w-[150px] z-10 right-4"
+            >
+              <a
+                href="#"
+                onclick="setTheme('light')"
+                class="block rounded px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >Purple-Light</a
+              >
+              <a
+                href="#"
+                onclick="setTheme('dark')"
+                class="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >Dark</a
+              >
+            </div>
+          </div>
         </div>
       </nav>
     </header>
-    <div class="relative w-full flex-1 overflow-hidden">
+
+    <main class="relative w-full flex-1 overflow-hidden bg-surface">
       <section id="cv" class="text-center pt-4">
-        <h1 class="text-4xl font-bold">Curriculum vitae</h1>
-        <h3><em>Benjamin Ignacio Perez Sarmiento</em></h3>
-        <p>benja.ignacio.0515@gmail.com +56 912345678</p>
+        <h1
+          class="text-4xl font-bold [text-shadow:1px_1px_0px_black] text-text italic"
+        >
+          Curriculum vitae
+        </h1>
+        <h3 class="text-text">
+          <em>Benjamin Ignacio Perez Sarmiento</em>
+        </h3>
+        <p class="text-text">benja.ignacio.0515@gmail.com +56 912345678</p>
       </section>
       <img
+        id="theme-img"
         src="assets/images/peeking_from_right_anime.png"
         alt=""
-        class="absolute top-10 right-0 w-180 h-auto pointer-events-none"
+        class="hidden anime-1116:block absolute top-10 right-0 h-auto pointer-events-none w-180 anime-1116:w-120 xl:w-165 2xl:w-280 lg:top-20 dark:hidden dark:xl:block dark:absolute dark:h-auto dark:w-80 dark:2xl:w-130 dark:rin-2050:w-180 dark:right-0 dark:top-25 dark:pointer-events-none"
       />
+
+      <!-- SECTIONS -->
       <div id="sections" class="max-w-4xl mx-auto grid grid-cols-2 gap-4 p-8">
         <section
           id="educacion"
-          class="h-64 border-sm border-white rounded-sm p-4 overflow-y-auto space-y-6 shadow-nav-purple bg-purple text-shadow-purple"
+          class="h-64 border-sm border-white rounded-sm p-4 overflow-y-auto space-y-6 shadow-nav-purple bg-purple dark:bg-dark text-shadow-purple"
         >
           <h3 class="text-center font-bold italic text-lg">Educacion</h3>
           <div class="item-educacion">
@@ -120,7 +155,7 @@
 
         <section
           id="experiencia"
-          class="h-64 border-sm border-white rounded-xl p-4 overflow-y-auto space-y-6 shadow-nav-purple bg-purple text-shadow-purple"
+          class="h-64 border-sm border-white rounded-xl p-4 overflow-y-auto space-y-6 shadow-nav-purple bg-purple dark:bg-dark text-shadow-purple"
         >
           <h3 class="text-center font-bold italic text-lg">Experiencia</h3>
           <div class="item-experiencia">
@@ -143,7 +178,7 @@
 
         <section
           id="tecnologias"
-          class="h-64 border-sm border-white rounded-xl overflow-y-auto p-4 space-y-6 shadow-nav-purple bg-purple text-shadow-purple"
+          class="h-64 border-sm border-white rounded-xl overflow-y-auto p-4 space-y-6 shadow-nav-purple bg-purple dark:bg-dark text-shadow-purple"
         >
           <h3 class="text-center font-bold italic text-lg">Tecnologias</h3>
           <div class="item-tecnologias">
@@ -160,7 +195,7 @@
 
         <section
           id="idiomas"
-          class="h-64 border-sm border-white rounded-sm overflow-y-auto space-y-6 p-4 shadow-nav-purple bg-purple text-shadow-purple"
+          class="h-64 border-sm border-white rounded-sm overflow-y-auto space-y-6 p-4 shadow-nav-purple bg-purple dark:bg-dark text-shadow-purple"
         >
           <h3 class="text-center font-bold italic text-lg">Idiomas</h3>
           <div class="item-idiomas">
@@ -168,9 +203,10 @@
           </div>
         </section>
       </div>
-    </div>
+    </main>
 
-    <footer class="bg-purplebg border-t">
+    <!-- FOOTER -->
+    <footer class="bg-bg border-t">
       <nav class="text-center">
         <ul
           class="font-medium text-white [text-shadow:1px_1px_0px_black] flex flex-col mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:justify-center md:bg-neutral-primary"
@@ -188,5 +224,9 @@
         </p>
       </nav>
     </footer>
+
+    <!-- SCRIPTS -->
+    <script src="assets/js/pageStyleMenu.js"></script>
+    <script src="assets/js/theme.js"></script>
   </body>
 </html>
