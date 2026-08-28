@@ -23,11 +23,6 @@ function setTheme(mode) {
     document.documentElement.classList.add("dark");
   } else if (saved === "light") {
     document.documentElement.classList.remove("dark");
-  } else {
-    const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)",
-    ).matches;
-    document.documentElement.classList.toggle("dark", prefersDark);
   }
   updateThemeImage();
 })();
