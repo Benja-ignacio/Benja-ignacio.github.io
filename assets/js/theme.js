@@ -5,13 +5,6 @@ function setTheme(mode) {
   } else if (mode === "light") {
     document.documentElement.classList.remove("dark");
     localStorage.setItem("theme", "light");
-  } else {
-    // system: sigue la preferencia del sistema operativo
-    localStorage.removeItem("theme");
-    const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)",
-    ).matches;
-    document.documentElement.classList.toggle("dark", prefersDark);
   }
   updateThemeImage();
 }
