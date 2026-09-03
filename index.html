@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="src/index.css" />
     <link rel="icon" type="image/png" href="assets/images/rin.jpg" />
   </head>
-  <body class="relative w-full min-h-screen flex flex-col">
+  <body class="min-h-screen flex flex-col">
     <video
       autoplay
       muted
@@ -32,7 +32,7 @@
           <button
             data-collapse-toggle="navbar-default"
             type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+            class="ml-auto inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
             aria-controls="navbar-default"
             aria-expanded="false"
           >
@@ -150,7 +150,10 @@
       />
 
       <!-- SECTIONS -->
-      <div id="sections" class="max-w-4xl mx-auto grid grid-cols-2 gap-4 p-8">
+      <div
+        id="sections"
+        class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 p-8"
+      >
         <section
           id="educacion"
           class="h-64 border-sm border-white rounded-sm p-4 overflow-y-auto space-y-6 shadow-nav-purple bg-purple dark:bg-dark text-shadow-purple"
@@ -211,6 +214,18 @@
             <p>Ingles B1</p>
           </div>
         </section>
+
+        <section
+          id="proyectos"
+          class="h-64 border-sm border-white rounded-sm overflow-y-auto space-y-6 p-4 shadow-nav-purple bg-purple dark:bg-dark text-shadow-purple"
+        >
+          <h3 class="text-center font-bold italic text-lg">Proyectos</h3>
+          <div class="item-idiomas">
+            <ul>
+              <a href="#">Proyecto semestral FullStack</a>
+            </ul>
+          </div>
+        </section>
       </div>
     </main>
 
@@ -223,9 +238,8 @@
           <li>
             <a href="/pages/about.html">Acerca</a>
           </li>
-
           <li>
-            <a href="/pages/about.html">Contacto</a>
+            <p>benja.ignacio.0515@gmail.com</p>
           </li>
         </ul>
         <p class="font-medium text-white [text-shadow:1px_1px_0px_black]">
